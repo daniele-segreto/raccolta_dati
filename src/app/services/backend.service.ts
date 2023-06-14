@@ -9,6 +9,7 @@ export class BackendService {
 
   constructor(private http: HttpClient) { }
 
+  // Metodo per aggiungere un utente al backend
   addUser(userData: any) {
     return this.http.post(`${this.apiUrl}/users`, userData);
   }

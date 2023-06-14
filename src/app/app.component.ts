@@ -7,13 +7,17 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  // Oggetto che rappresenta i dati dell'utente
   userData = {
     name: '',
     email: '',
     password: ''
   };
 
+  // Variabile che indica se il form è aperto o chiuso
   isFormOpen = false;
+
+  // Variabile per mostrare/nascondere il messaggio di successo
   showSuccessMessage: boolean = false;
 
   constructor(private backendService: BackendService) { }
